@@ -2,12 +2,9 @@
     @media (max-width: #{$phone-width})
         @content
         display: flex
-        // align-content: center
-        // align-items: center
-        // justify-content: center
+        
 .container-fluid
-    @include phone
-        // justify-content: space-between        
+    @include phone     
         align-items: center
         justify-content: center
         flex-direction: column
@@ -21,10 +18,7 @@ h2
 .pokedex
     @include phone
         flex-direction: column
-        // justify-content: center
-        box-sizing: content-box        
-        // max-width: 360px
-        // min-width: 350px
+        box-sizing: content-box     
         width: 300px    
         align-items: center
         justify-content: center
@@ -44,7 +38,6 @@ h2
         #searchPokemon
             @include phone
                 font-size: 10px
-                // max-width: 350px
                 min-width: 300px
                 min-height: 50px
 
@@ -53,19 +46,14 @@ h2
                 min-width: 300px
                 max-height: 70px
                 text-align: center
-                // max-width: 350px
-                // margin-right: 2px
-
         .dots
             @include phone
-                // display: flex
                 margin:
                     top: 15px
                 box-sizing: content-box    
 
             .dot
                 @include phone
-                // justify-content: center
                     width: 10px
                     height: 10px
                     margin:
@@ -91,4 +79,3 @@ h2
     
     // .not_found
     //     @include phone
-    //         max-height: 600px

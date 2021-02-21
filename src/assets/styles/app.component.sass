@@ -8,11 +8,14 @@ body
 
     .pokedex
         border: 3px solid black
+        border-radius: 5px
         background-color: red
 
         .grey-background
             background-color: grey
             padding: 10px
+            border: groove 2px black
+            border-radius: 15px
             margin: 
                 top: 30px
                 bottom: 30px
@@ -22,10 +25,14 @@ body
         
             #pokeImg
                 background-color: skyblue
-                borde: 1px solid darkblue
+                border: 1px solid black
+                border-radius: 25px
                 margin:
                     top: 10px
                     bottom: 20px
+                -moz-box-shadow:    inset 0 0 10px #000000
+                -webkit-box-shadow: inset 0 0 10px #000000
+                box-shadow:         inset 0 0 10px #000000                    
             
             a
                 color: #09029e
@@ -38,10 +45,11 @@ body
             text-decoration: none
 
         #searchPokemon
-            min-width: 300px 
+            min-width: 300px
 
         #searchButton
-            min-width: 300p
+            min-width: 300px
+            text-align: center
             
         #searchButton:hover
             background-color: lighten(#007bff, 30%)
@@ -83,21 +91,10 @@ body
             .dot:last-child
                 -webkit-animation-name: dotColor3
                 animation-delay: 2s
-                // background-color: #6ff26f
                 @-webkit-keyframes dotColor3
                     from
                         background-color: darken( #6ff26f, 30% )    
                     to
                         background-color: #6ff26f    
-
-    // darken( $base-color, 10% )
-    // lighten( $base-color, 10% )
-
-            // @-webkit-keyframes dotColor1 
-            //     background-color: darken( #ed766d, 90% )    
-                // 0% (background-color: white)
-                // 50% (background-color: white)
-                // 51% (background-color: black)
-                // 100% (background-color: black)
 
         
