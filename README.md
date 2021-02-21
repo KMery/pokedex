@@ -4,7 +4,7 @@ The API used is https://pokeapi.co/api/v2/ in this case just to get the image of
 Also get a link to the wikidex of the selected pokemon
 
 # Preview
-The following link is the deploy site https://6031c51698d6e80531af10f2--romantic-pasteur-0306d9.netlify.app/
+The following link is the deploy site https://6031c88128277a000897bbd2--romantic-pasteur-0306d9.netlify.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
