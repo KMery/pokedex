@@ -1,4 +1,7 @@
 # Pokedex
+This project is a pokedex that let you search pokemons by name or id.
+The API used is https://pokeapi.co/api/v2/ in this case just to get the image of a pokemon I use "/pokemon-form"
+Also get a link to the wikidex of the selected pokemon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
