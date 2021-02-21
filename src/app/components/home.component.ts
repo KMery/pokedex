@@ -10,7 +10,7 @@ export class HomeComponent {
     public title:string;
     public values:string;
     public result:any;
-    public decription:any;
+    public wikidex_link:string;
     public object_keys:string[];
 
     constructor(
@@ -33,6 +33,9 @@ export class HomeComponent {
             .subscribe(
                 data => {
                     this.result = data;
+                    let pokemon_name = this.result.name;
+                    this.wikidex_link = `https://www.wikidex.net/wiki/${pokemon_name}`;
+                    
                     this.object_keys = Object.keys(this.result)
                     if (not_found_div.children.length > 0) {
                         not_found_div.style.display = 'none';
@@ -48,7 +51,6 @@ export class HomeComponent {
                         };
                     };
                 });
-            // this.values = '';
         }
     }
 
