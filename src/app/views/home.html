@@ -5,7 +5,7 @@
         <div class="pokedex">
             <div class="search">
                 <input type="search" name="searchPokemon" id="searchPokemon" (keyup)="onKey($event)" placeholder="Enter name or id of a pokemon" onfocus="this.value=''">
-                <button (click)="startSearch()" type="reset" class="btn btn-primary" id="startButton">Start search</button>
+                <button (click)="startSearch()" type="reset" class="btn btn-primary" id="searchButton">Start search</button>
                 <div class="dots">
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -18,6 +18,7 @@
             <div class="grey-background">
                 <h3> {{result?.name}} </h3>
                 <img id="pokeImg" src="{{result?.sprites.front_default}}" alt="Pokemon's image not found...">
+                <a href="{{ wikidex_link }}">Link wikidex</a>
             </div>
         </div>
         
@@ -30,4 +31,12 @@
         </div>
     
     </div>
+
 </div>
+<footer>
+    <div>
+        <a href="https://www.instagram.com/kmery_bonfeu/"><img src="../../assets/icons/instagram-brands.svg" alt="Ig"></a>
+        <a href="https://github.com/KMery/"><img src="../../assets/icons/github-brands.svg" alt="Gh"></a>
+    </div>
+    <p>By KMery</p>
+</footer>
