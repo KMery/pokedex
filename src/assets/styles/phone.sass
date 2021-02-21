@@ -1,0 +1,87 @@
+@mixin phone
+    @media (max-width: #{$phone-width})
+        @content
+        display: flex
+        // align-content: center
+        // align-items: center
+        // justify-content: center
+.container-fluid
+    @include phone
+        // justify-content: space-between        
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        flex-wrap: wrap
+
+h2  
+    @include phone
+        padding-top: 10px
+        font-size: 30px
+
+.pokedex
+    @include phone
+        flex-direction: column
+        // justify-content: center
+        box-sizing: content-box        
+        // max-width: 360px
+        // min-width: 350px
+        width: 300px    
+        align-items: center
+        justify-content: center
+        padding: 5px
+
+    p
+        @include phone
+        margin: 0
+            flex-wrap: wrap
+
+    .search
+        @include phone
+            padding: 15px
+            flex-direction: column
+            justify-content: flex-end
+            
+        #searchPokemon
+            @include phone
+                font-size: 10px
+                // max-width: 350px
+                min-width: 300px
+                min-height: 50px
+
+        #startButton
+            @include phone
+                min-width: 300px
+                max-height: 70px
+                text-align: center
+                // max-width: 350px
+                // margin-right: 2px
+
+        .dots
+            @include phone
+                // display: flex
+                margin:
+                    top: 15px
+                box-sizing: content-box    
+
+            .dot
+                @include phone
+                // justify-content: center
+                    width: 10px
+                    height: 10px
+                    margin:
+                        right: 10px
+                    box-sizing: content-box
+
+    #pokeImg
+        @include phone
+            max-width: 250px
+            min-height: 250px
+
+    h3
+        @include phone
+            font-size: 20px
+            padding-top: 20px        
+    
+    // .not_found
+    //     @include phone
+    //         max-height: 600px

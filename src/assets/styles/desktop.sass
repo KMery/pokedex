@@ -1,0 +1,57 @@
+@mixin desktop
+    @media (min-width: #{$phone-width + 1})
+        @content
+        display: flex
+        // padding-bottom: 30px
+    
+h2
+    @include desktop
+        margin-top: 20px
+        padding: 10px
+        justify-content: center
+
+.pokedex
+    @include desktop
+        display: flex
+        padding: 30px
+        align-items: center
+        justify-content: center
+        // width: 100%
+
+    .search
+        @include desktop
+            flex-direction: row
+            flex-wrap: wrap
+
+            #searchPokemon
+                @include desktop
+                    min-width: 400px
+                    // width: 100%
+                    font-size: 12px
+                    height: 40px
+            
+            #startButton
+                @include desktop
+                    height: 40px
+                    min-width: 230px 
+            
+            .dots
+                @include desktop
+                    margin-left: 30px
+    
+    // .pokedex
+    //     @include desktop
+    //         h2
+    //             @include desktop
+    //                 font-size: "200px"
+    //         img
+    //             @include desktop
+    //                 min-width: "400px"
+
+    .grey-background
+        @include desktop
+            flex-direction: column
+
+            #pokeImg
+                min-width: 350px
+                min-height: 500px

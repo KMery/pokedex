@@ -1,0 +1,96 @@
+@import 'breakpoints', 'phone', 'desktop'
+
+body
+    background-color: yellow
+    text-align: center
+    font-family: 'Press Start 2P', cursive
+    margin: 0
+
+    .pokedex
+        border: 3px solid black
+        background-color: red
+
+        .grey-background
+            background-color: grey
+            padding: 10px
+            margin: 
+                top: 30px
+                bottom: 30px
+            h3
+                text-transform: capitalize
+                padding-top: 20px
+        
+            #pokeImg
+                background-color: skyblue
+                borde: 1px solid darkblue
+                margin:
+                    top: 10px
+                    bottom: 20px
+        
+        a
+            text-decoration: none
+                
+        #searchPokemon
+            min-width: 300px 
+
+        #searchButton
+            min-width: 300p
+            
+        #searchButton:hover
+            background-color: lighten(#007bff, 30%)
+
+        .notFound
+            border: 3px solid black
+        
+        .search
+            display: flex
+            // flex-direction: row
+            // padding: 20px
+        
+        .dots
+            .dot
+                -webkit-animation-iteration-count: infinite
+                -webkit-animation-duration: 3s
+                height: 20px
+                width: 20px
+                padding: 15px
+                margin: 5px
+                border-radius: 50%
+
+            .dot:first-child
+                -webkit-animation-name: dotColor1
+                @-webkit-keyframes dotColor1
+                    from
+                        background-color: darken( #ed766d, 30% )    
+                    to
+                        background-color: #ed766d    
+            .dot:nth-child(2)
+                -webkit-animation-name: dotColor2
+                // background-color: #e4e681
+                animation-delay: 1s
+                @-webkit-keyframes dotColor2
+                    from
+                        background-color: darken( #e4e681, 30% )    
+                    to
+                        background-color: #e4e681    
+            .dot:last-child
+                -webkit-animation-name: dotColor3
+                animation-delay: 2s
+                // background-color: #6ff26f
+                @-webkit-keyframes dotColor3
+                    from
+                        background-color: darken( #6ff26f, 30% )    
+                    to
+                        background-color: #6ff26f    
+
+    // darken( $base-color, 10% )
+    // lighten( $base-color, 10% )
+
+            // @-webkit-keyframes dotColor1 
+            //     background-color: darken( #ed766d, 90% )    
+                // 0% (background-color: white)
+                // 50% (background-color: white)
+                // 51% (background-color: black)
+                // 100% (background-color: black)
+
+        
