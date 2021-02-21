@@ -1,0 +1,33 @@
+<div>
+    <h2> {{title}} </h2>
+
+    <div class="container-fluid">
+        <div class="pokedex">
+            <div class="search">
+                <input type="search" name="searchPokemon" id="searchPokemon" (keyup)="onKey($event)" placeholder="Enter name or id of a pokemon" onfocus="this.value=''">
+                <button (click)="startSearch()" type="reset" class="btn btn-primary" id="startButton">Start search</button>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="object_keys.length > 0 " class="pokedex">
+            <div class="grey-background">
+                <h3> {{result?.name}} </h3>
+                <img id="pokeImg" src="{{result?.sprites.front_default}}" alt="Pokemon's image not found...">
+            </div>
+        </div>
+        
+        <div>
+            <div id="not_found"></div>
+        </div>
+
+        <div *ngIf="object_keys.length == 0" class="pokedex">
+            <a>"There isn't a content yet..."</a>
+        </div>
+    
+    </div>
+</div>
