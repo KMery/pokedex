@@ -16,8 +16,9 @@ export class PokemonService {
     }
 
     getPokemon(id:string) {
+        let id_pokemon = id.toLocaleLowerCase();
         try {
-            return this.http.get(this.pokemonUrl + id);
+            return this.http.get(this.pokemonUrl + id_pokemon);
         } catch (error) {
             console.error(error.message);
         }
